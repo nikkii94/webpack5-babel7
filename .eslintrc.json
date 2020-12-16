@@ -4,17 +4,34 @@
     "es6": true,
     "node": true
   },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 2020
+    "ecmaVersion": 2020,
+    "sourceType": "module"
   },
+  "plugins": ["babel"],
   "rules": {
     "strict": [
       "error", "global"
     ],
+    "quotes": ["error", "prefer-single"],
     "func-style": ["error", "expression"],
     "no-new-func": "error",
-    "no-param-reassign": "error",
+    "arrow-parens": "off",
+    "no-param-reassign": "off",
+    "no-invalid-this": 0,
+    "babel/no-invalid-this": 1,
+    "new-cap": "error",
     "prefer-arrow-callback": "error",
-    "arrow-body-style": ["error", "as-needed"]
+    "arrow-body-style": ["error", "as-needed"],
+    "no-plusplus": "off",
+    "prefer-const": "error",
+    "prefer-numeric-literals": "error",
+    "prefer-rest-params": "error",
+    "prefer-spread": "error"
   }
 }

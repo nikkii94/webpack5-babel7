@@ -1,6 +1,6 @@
-// import './scss/style.scss';
+import "./scss/style.scss";
 
-console.log('hello');
-// console.log('hello there');
+const h1 = document.createElement("h1");
+h1.innerText = "Hello Webpack!";
 
-document.body.innerText = 'Hello!';
+document.body.appendChild(h1);
