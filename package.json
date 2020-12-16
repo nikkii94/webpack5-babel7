@@ -1,0 +1,53 @@
+{
+  "name": "webpack5-babel7",
+  "version": "0.0.1",
+  "browserslist": [
+    "ie 11"
+  ],
+  "keywords": [
+    "webpack",
+    "webpack 5",
+    "babel",
+    "babel 7",
+    "ie 11"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --hot --config webpack.dev.js --open Brave",
+    "build": "webpack --config webpack.prod.js",
+    "es5-check": "npx es-check es5 ./dist/*.js --verbose"
+  },
+  "dependencies": {
+    "core-js": "^3.8.1",
+    "regenerator-runtime": "^0.13.7",
+    "whatwg-fetch": "^3.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.12.10",
+    "@bitjourney/check-es-version-webpack-plugin": "^1.0.3",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "ecma-version-validator-webpack-plugin": "^1.1.0",
+    "es-check": "^5.1.4",
+    "es-checker": "^1.4.2",
+    "eslint": "^7.15.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.3",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^4.1.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "stylelint-webpack-plugin": "^2.1.1",
+    "terser-webpack-plugin": "^5.0.3",
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.6.1"
+  }
+}
